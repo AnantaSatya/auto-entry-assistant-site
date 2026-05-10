@@ -12,88 +12,208 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="index.html">Auto Entry Assistant</a>
-      <nav aria-label="Navigasi utama">
-        <a href="index.html">Produk</a>
-        <a href="terms.html">Terms</a>
-      </nav>
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Auto Entry Assistant">
+          <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true">
+            <path d="M50 20L80 80H70L50 40L30 80H20L50 20Z" fill="#0d9488" />
+            <rect x="40" y="55" width="20" height="5" fill="#0d9488" />
+          </svg>
+          <span>Auto Entry Assistant</span>
+        </a>
+        <nav aria-label="Navigasi utama">
+          <a href="index.html">Produk</a>
+          <a class="active" href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms</a>
+        </nav>
+        <a
+          class="header-cta"
+          href="https://chromewebstore.google.com/detail/hfgamchafmifeeedlchlpnbcmllpcbfe?utm_source=item-share-cb"
+          target="_blank"
+          rel="noopener"
+        >
+          Install Extension
+        </a>
+      </div>
     </header>
 
-    <main class="legal">
-      <p class="eyebrow">Terakhir diperbarui: 10 Mei 2026</p>
-      <h1>Privacy Policy</h1>
-      <p>
-        Kebijakan ini menjelaskan bagaimana Auto Entry Assistant memproses data saat
-        pengguna membuat akun, login, menggunakan fitur automation, dan melakukan
-        pembayaran perpanjangan akun.
-      </p>
+    <main class="page-shell legal-page">
+      <section class="legal-intro">
+        <h1>Privacy Policy</h1>
+        <p>Terakhir diperbarui: <strong>10 Mei 2026</strong></p>
+        <p>
+          Auto Entry Assistant memproses data pengguna untuk kebutuhan akun, login,
+          akses menu, validasi masa aktif, pembayaran, dan pengoperasian fitur automation.
+        </p>
+      </section>
 
-      <h2>Data yang Diproses</h2>
-      <p>Kami memproses data berikut untuk menjalankan layanan:</p>
-      <ul>
-        <li>Email pengguna untuk akun, login, OTP, pemulihan password, dan komunikasi layanan.</li>
-        <li>Status akun, masa aktif, akses menu, versi aplikasi, dan informasi session device.</li>
-        <li>Data order pembayaran seperti paket, nominal, status pembayaran, dan waktu transaksi.</li>
-        <li>Preferensi lokal extension seperti mode run, rentang play, dan pengaturan menu.</li>
-      </ul>
+      <section class="privacy-grid">
+        <article class="legal-card wide-card">
+          <div class="section-heading">
+            <span class="icon-tile">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <ellipse cx="12" cy="6" rx="7" ry="3" />
+                <path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6" />
+                <path d="M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6" />
+              </svg>
+            </span>
+            <h2>Data Yang Diproses</h2>
+          </div>
+          <p>Kami memproses data berikut untuk menjalankan layanan:</p>
+          <ul class="check-list">
+            <li>Email pengguna untuk akun, login, OTP, pemulihan password, dan komunikasi layanan.</li>
+            <li>Status akun, masa aktif, akses menu, versi aplikasi, dan informasi session device.</li>
+            <li>Data order pembayaran seperti paket, nominal, status pembayaran, dan waktu transaksi.</li>
+            <li>Preferensi lokal extension seperti mode run, rentang play, dan pengaturan menu.</li>
+          </ul>
+        </article>
 
-      <h2>Data Automation</h2>
-      <p>
-        Input automation dan result, seperti NIB/NIBEL, nomor hak, Persil ID, data SU/Hak,
-        serta log sukses atau gagal, diproses lokal di browser pengguna. Data tersebut tidak
-        dikirim ke database kami kecuali jika fitur tertentu nantinya secara jelas meminta
-        pengguna untuk menyimpan data tersebut.
-      </p>
+        <article class="legal-card tinted-card">
+          <div class="section-heading">
+            <span class="icon-tile danger">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M8 8l8 8" />
+              </svg>
+            </span>
+            <h2>Hal Yang Tidak Kami Lakukan</h2>
+          </div>
+          <ul class="cross-list">
+            <li>Kami tidak menjual data pengguna.</li>
+            <li>Kami tidak meminta atau menyimpan password sistem target milik pengguna.</li>
+            <li>Kami tidak menjalankan arbitrary remote JavaScript dari backend.</li>
+          </ul>
+          <p class="small-note">
+            Konfigurasi workflow dari backend digunakan sebagai data selector dan pengaturan,
+            bukan kode jarak jauh.
+          </p>
+        </article>
+      </section>
 
-      <h2>Layanan Pendukung</h2>
-      <p>Auto Entry Assistant menggunakan layanan pendukung berikut:</p>
-      <ul>
-        <li>Supabase untuk autentikasi, database akun, akses menu, session, dan konfigurasi workflow.</li>
-        <li>Midtrans untuk pemrosesan pembayaran perpanjangan akun.</li>
-        <li>Brevo atau layanan SMTP untuk pengiriman OTP dan email transaksional.</li>
-        <li>Chrome Storage untuk menyimpan pengaturan lokal di browser pengguna.</li>
-      </ul>
+      <section class="legal-card automation-card">
+        <div class="section-heading">
+          <span class="icon-tile mint">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 8V5m10 3V5M5 11h14" />
+              <rect x="4" y="7" width="16" height="13" rx="2" />
+              <path d="M9 15l2 2 4-5" />
+            </svg>
+          </span>
+          <h2>Data Automation</h2>
+        </div>
+        <div class="split-content">
+          <div>
+            <p>Input automation dan result diproses lokal di browser pengguna:</p>
+            <ul>
+              <li>NIB/NIBEL</li>
+              <li>Nomor hak</li>
+              <li>Persil ID</li>
+              <li>Data SU/Hak</li>
+              <li>Log sukses atau gagal</li>
+            </ul>
+          </div>
+          <aside class="callout">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 8.5A5.5 5.5 0 0 1 14.5 6" />
+              <path d="M18 18.5A4.5 4.5 0 0 0 17 10" />
+              <path d="M3 3l18 18" />
+            </svg>
+            <p>
+              Saat ini data automation tidak disimpan ke server kami. Jika di kemudian
+              hari tersedia fitur penyimpanan cloud, pengguna akan diberitahu dengan jelas.
+            </p>
+          </aside>
+        </div>
+      </section>
 
-      <h2>Hal yang Tidak Kami Lakukan</h2>
-      <ul>
-        <li>Kami tidak menjual data pengguna.</li>
-        <li>Kami tidak meminta atau menyimpan password sistem target milik pengguna.</li>
-        <li>Kami tidak menjalankan arbitrary remote JavaScript dari backend.</li>
-        <li>Konfigurasi workflow dari backend digunakan sebagai data selector dan pengaturan, bukan kode jarak jauh.</li>
-      </ul>
+      <section class="privacy-grid lower-grid">
+        <article class="legal-card wide-card">
+          <div class="section-heading">
+            <span class="icon-tile">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3l8 4-8 4-8-4 8-4z" />
+                <path d="M4 12l8 4 8-4" />
+                <path d="M4 17l8 4 8-4" />
+              </svg>
+            </span>
+            <h2>Layanan Pendukung</h2>
+          </div>
+          <div class="service-grid">
+            <div>
+              <h3>Supabase</h3>
+              <p>Untuk autentikasi, database akun, akses menu, session, dan konfigurasi workflow.</p>
+            </div>
+            <div>
+              <h3>Midtrans</h3>
+              <p>Untuk pemrosesan pembayaran perpanjangan akun.</p>
+            </div>
+            <div>
+              <h3>Brevo / SMTP</h3>
+              <p>Untuk pengiriman OTP dan email transaksional.</p>
+            </div>
+            <div>
+              <h3>Chrome Storage</h3>
+              <p>Untuk menyimpan pengaturan lokal di browser pengguna.</p>
+            </div>
+          </div>
+        </article>
 
-      <h2>Pembagian Data</h2>
-      <p>
-        Data dapat diproses oleh layanan pendukung di atas sejauh diperlukan untuk login,
-        pengiriman email, validasi akun, dan pembayaran. Kami tidak membagikan data kepada
-        pihak lain untuk penjualan data atau iklan.
-      </p>
+        <div class="side-stack">
+          <article class="legal-card small-card">
+            <h2>Pembagian Data</h2>
+            <p>
+              Data dapat diproses oleh layanan pendukung sejauh diperlukan untuk login,
+              pengiriman email, validasi akun, dan pembayaran.
+            </p>
+            <p><strong>Kami tidak membagikan data kepada pihak lain untuk penjualan data atau iklan.</strong></p>
+          </article>
+          <article class="legal-card small-card">
+            <h2>Retensi Data</h2>
+            <p>
+              Data akun dan pembayaran disimpan selama diperlukan untuk operasional layanan,
+              dukungan pengguna, audit pembayaran, dan kepatuhan hukum yang berlaku.
+            </p>
+            <p>Data lokal di Chrome Storage dapat dihapus oleh pengguna dari browser.</p>
+          </article>
+        </div>
+      </section>
 
-      <h2>Retensi Data</h2>
-      <p>
-        Data akun dan pembayaran disimpan selama diperlukan untuk operasional layanan,
-        dukungan pengguna, audit pembayaran, dan kepatuhan hukum yang berlaku. Data lokal
-        di Chrome Storage dapat dihapus oleh pengguna dengan menghapus data extension dari
-        browser.
-      </p>
-
-      <h2>Hak Pengguna</h2>
-      <p>
-        Pengguna dapat meminta bantuan terkait data akun, koreksi data, atau penghapusan
-        akun dengan menghubungi kontak di bawah. Permintaan akan diproses sesuai kemampuan
-        teknis dan ketentuan hukum yang berlaku.
-      </p>
-
-      <h2>Kontak</h2>
-      <p>
-        Untuk pertanyaan privasi, hubungi
-        <a href="mailto:anantasatya01@gmail.com">anantasatya01@gmail.com</a>.
-      </p>
+      <section class="contact-band">
+        <div>
+          <h2>Hak Pengguna & Privasi</h2>
+          <p>
+            Pengguna dapat meminta bantuan terkait data akun, koreksi data, atau penghapusan
+            akun dengan menghubungi kontak resmi privasi kami.
+          </p>
+        </div>
+        <a href="mailto:anantasatya01@gmail.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <path d="M4 7l8 6 8-6" />
+          </svg>
+          anantasatya01@gmail.com
+        </a>
+      </section>
     </main>
 
-    <footer>
-      <span>Auto Entry Assistant</span>
-      <span>Privacy Policy</span>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <a class="brand footer-brand" href="index.html">
+            <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true">
+              <path d="M50 20L80 80H70L50 40L30 80H20L50 20Z" fill="#0d9488" />
+              <rect x="40" y="55" width="20" height="5" fill="#0d9488" />
+            </svg>
+            <span>Auto Entry Assistant</span>
+          </a>
+          <p>© 2026 Auto Entry Assistant. All rights reserved. Precision automation for modern workflows.</p>
+        </div>
+        <nav aria-label="Navigasi footer">
+          <a href="index.html">Produk</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms</a>
+          <a href="mailto:anantasatya01@gmail.com">Contact Us</a>
+        </nav>
+      </div>
     </footer>
   </body>
 </html>
