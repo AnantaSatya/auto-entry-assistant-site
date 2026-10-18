@@ -3,184 +3,207 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Auto Entry Assistant - Produk dan Harga</title>
+    <meta name="theme-color" content="#123633" />
+    <title>Auto Entry Assistant - Otomasi Pekerjaan Berulang</title>
     <meta
       name="description"
-      content="Auto Entry Assistant adalah ekstensi browser berlangganan untuk membantu otomasi input data administratif bagi pengguna yang memiliki akses sah ke sistem target."
+      content="Auto Entry Assistant adalah ekstensi browser untuk membantu pekerjaan input data berulang pada portal kerja yang didukung."
     />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg?v=20260510-1" />
-    <link rel="stylesheet" href="styles.css?v=20260510-2" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg?v=20261019" />
+    <link rel="preload" href="hero-product.webp" as="image" type="image/webp" />
+    <link rel="stylesheet" href="styles.css?v=20261019-2" />
   </head>
   <body>
     <header class="site-header">
       <div class="header-inner">
-        <a class="brand" href="index.html" aria-label="Auto Entry Assistant">
-          <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true">
-            <path d="M50 20L80 80H70L50 40L30 80H20L50 20Z" fill="#0d9488" />
-            <rect x="40" y="55" width="20" height="5" fill="#0d9488" />
-          </svg>
+        <a class="brand" href="index.html" aria-label="Auto Entry Assistant, beranda">
+          <img src="favicon.svg" alt="" width="32" height="32" />
           <span>Auto Entry Assistant</span>
         </a>
-        <nav aria-label="Navigasi utama">
-          <a class="active" href="index.html">Produk</a>
-          <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="terms.html">Terms</a>
+        <nav class="desktop-nav" aria-label="Navigasi utama">
+          <a href="#fitur">Fitur</a>
+          <a href="#cara-kerja">Cara kerja</a>
+          <a href="#harga">Harga</a>
+          <a href="privacy-policy.html">Privasi</a>
+          <a href="terms.html">Ketentuan</a>
         </nav>
         <a
-          class="header-cta"
+          class="button button-small button-install"
           href="https://chromewebstore.google.com/detail/hfgamchafmifeeedlchlpnbcmllpcbfe?utm_source=item-share-cb"
           target="_blank"
           rel="noopener"
         >
-          Install Extension
+          Pasang ekstensi
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg>
         </a>
       </div>
     </header>
 
-    <main class="page-shell">
-      <section class="hero-card">
-        <div class="hero-glow"></div>
-        <div class="hero-content">
-          <span class="status-pill">Beta Terbatas</span>
-          <h1>Auto Entry Assistant</h1>
-          <p>
-            Ekstensi browser berlangganan untuk membantu otomasi input data administratif
-            bagi pengguna yang memiliki akses sah ke sistem target.
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-image" role="img" aria-label="Tampilan Auto Entry Assistant di side panel browser"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-inner">
+          <p class="eyebrow">Ekstensi browser · Versi 8.0.0</p>
+          <h1 id="hero-title">Auto Entry Assistant</h1>
+          <p class="hero-lead">
+            Selesaikan pekerjaan input data berulang langsung dari side panel browser,
+            sambil tetap memegang kendali atas setiap proses dan hasilnya.
           </p>
           <div class="hero-actions">
             <a
-              class="button primary"
+              class="button button-light"
               href="https://chromewebstore.google.com/detail/hfgamchafmifeeedlchlpnbcmllpcbfe?utm_source=item-share-cb"
               target="_blank"
               rel="noopener"
             >
-              Install dari Chrome Web Store
+              Pasang dari Chrome Web Store
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg>
             </a>
-            <a class="button secondary" href="#harga">Lihat Harga</a>
+            <a class="button button-ghost" href="#cara-kerja">Lihat cara kerja</a>
+          </div>
+          <p class="hero-note">Uji coba 4 hari · Tidak memerlukan kartu pembayaran</p>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="Ringkasan layanan">
+        <div class="section-inner trust-grid">
+          <div><strong>Data kerja lokal</strong><span>Input dan hasil tetap di browser</span></div>
+          <div><strong>Kontrol pengguna</strong><span>Mulai, hentikan, dan periksa hasil</span></div>
+          <div><strong>Pembayaran QRIS</strong><span>Perpanjangan langsung dari aplikasi</span></div>
+          <div><strong>Dukungan langsung</strong><span>WhatsApp dan email tersedia</span></div>
+        </div>
+      </section>
+
+      <section class="section section-features" id="fitur">
+        <div class="section-inner feature-layout">
+          <div class="section-copy">
+            <p class="eyebrow dark">Dibuat untuk pekerjaan nyata</p>
+            <h2>Lebih sedikit klik berulang, lebih banyak waktu untuk memeriksa hasil.</h2>
+            <p>
+              Auto Entry Assistant berjalan berdampingan dengan halaman kerja. Anda memilih
+              workflow, menyiapkan data, lalu menjalankan proses dari side panel tanpa berpindah aplikasi.
+            </p>
+          </div>
+          <div class="feature-list">
+            <article>
+              <span>01</span>
+              <div><h3>Workflow yang terarah</h3><p>Menu tampil sesuai akses akun dan halaman yang sedang digunakan.</p></div>
+            </article>
+            <article>
+              <span>02</span>
+              <div><h3>Proses tetap terlihat</h3><p>Status berjalan, sukses, atau gagal dapat dipantau langsung dari side panel.</p></div>
+            </article>
+            <article>
+              <span>03</span>
+              <div><h3>Data tersimpan lokal</h3><p>Input terakhir, preferensi, dan result disimpan pada perangkat pengguna.</p></div>
+            </article>
+            <article>
+              <span>04</span>
+              <div><h3>Versi dan akses terkelola</h3><p>Validasi versi membantu memastikan workflow yang dipakai masih didukung.</p></div>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="summary-grid" id="harga">
-        <article class="price-card">
-          <div class="top-accent"></div>
-          <h2>Harga</h2>
-          <p class="price">Rp15.000</p>
-          <p class="price-note">/ 30 hari / akun</p>
-          <p>Pembayaran digunakan untuk perpanjangan masa aktif akun.</p>
-        </article>
-
-        <article class="status-card">
-          <div class="section-heading">
-            <span class="icon-round">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <circle cx="12" cy="12" r="9" />
-                <path d="M12 10v6M12 7.5h.01" />
-              </svg>
-            </span>
-            <h2>Status Produk</h2>
+      <section class="section section-steps" id="cara-kerja">
+        <div class="section-inner">
+          <div class="section-heading-row">
+            <div>
+              <p class="eyebrow dark">Cara kerja</p>
+              <h2>Tiga langkah dari data ke hasil.</h2>
+            </div>
+            <p>Setiap proses tetap dijalankan dari akun dan browser milik pengguna sendiri.</p>
           </div>
-          <p>
-            Auto Entry Assistant berada dalam tahap <strong>Beta Terbatas.</strong>
-            Fitur utama sudah dapat digunakan, tetapi workflow dapat berubah mengikuti
-            perubahan halaman target dan penyempurnaan layanan.
-          </p>
-        </article>
+          <ol class="steps">
+            <li><span>1</span><h3>Masuk</h3><p>Login ke Auto Entry Assistant dan portal kerja menggunakan akun sah Anda.</p></li>
+            <li><span>2</span><h3>Siapkan</h3><p>Pilih menu workflow, masukkan data, dan tentukan rentang proses.</p></li>
+            <li><span>3</span><h3>Jalankan</h3><p>Pantau progres lalu periksa kembali hasil sebelum digunakan untuk pekerjaan resmi.</p></li>
+          </ol>
+        </div>
       </section>
 
-      <section class="feature-card">
-        <h2>Fitur Utama</h2>
-        <div class="feature-grid">
-          <div class="feature-item">
-            <span class="feature-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M5 3v4M3 5h4M18 4v5M15.5 6.5h5M7 14v6M4 17h6M16 13l2 2 3-4" />
-              </svg>
-            </span>
-            <div>
-              <h3>Menu Automation</h3>
-              <p>Berbasis akses akun.</p>
-            </div>
+      <section class="section section-pricing" id="harga">
+        <div class="section-inner pricing-layout">
+          <div>
+            <p class="eyebrow">Harga sederhana</p>
+            <h2>Satu akun, akses 30 hari.</h2>
+            <p class="pricing-copy">Mulai dengan uji coba 4 hari. Perpanjang hanya ketika akun mendekati masa berakhir.</p>
           </div>
-          <div class="feature-item">
-            <span class="feature-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 3l7 3v5c0 4.5-2.8 8.5-7 10-4.2-1.5-7-5.5-7-10V6l7-3z" />
-                <path d="M9 12l2 2 4-5" />
-              </svg>
-            </span>
-            <div>
-              <h3>Validasi</h3>
-              <p>Validasi versi aplikasi dan masa aktif akun.</p>
-            </div>
-          </div>
-          <div class="feature-item">
-            <span class="feature-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M5 17h7M5 13h5M5 9h9" />
-                <path d="M17 15l2 2 3-5" />
-                <path d="M3 5h12a2 2 0 0 1 2 2v4" />
-              </svg>
-            </span>
-            <div>
-              <h3>Result Lokal</h3>
-              <p>Untuk membaca status sukses atau gagal.</p>
-            </div>
-          </div>
-          <div class="feature-item">
-            <span class="feature-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <rect x="3" y="6" width="18" height="12" rx="2" />
-                <path d="M7 10h4M17 14h.01M13 14h.01" />
-              </svg>
-            </span>
-            <div>
-              <h3>Perpanjangan Akun</h3>
-              <p>Melalui pembayaran online.</p>
-            </div>
+          <div class="price-box">
+            <div><span>Perpanjangan akun</span><strong>Rp15.000</strong><small>/ 30 hari</small></div>
+            <ul>
+              <li>Pembayaran QRIS</li>
+              <li>Masa aktif diperbarui otomatis</li>
+              <li>Bantuan transaksi melalui WhatsApp</li>
+            </ul>
+            <a
+              class="button button-coral"
+              href="https://chromewebstore.google.com/detail/hfgamchafmifeeedlchlpnbcmllpcbfe?utm_source=item-share-cb"
+              target="_blank"
+              rel="noopener"
+            >Mulai uji coba</a>
+            <p>Layanan dijual dan dikelola oleh Auto Entry Assistant, bukan oleh Google.</p>
           </div>
         </div>
       </section>
 
-      <section class="notice-grid">
-        <article>
-          <h2>Batasan</h2>
-          <p>
-            Extension ini membantu menjalankan langkah automation di browser pengguna.
-            Pengguna tetap wajib memeriksa hasil akhir dan memastikan data yang diproses
-            sudah benar.
-          </p>
-        </article>
-        <article>
-          <h2>Disclaimer</h2>
-          <p>
-            Auto Entry Assistant bukan aplikasi resmi ATR/BPN atau instansi pemerintah.
-            Penggunaan extension ini hanya diperuntukkan bagi pengguna yang memiliki akses
-            sah ke sistem target dan bertanggung jawab atas data yang diproses.
-          </p>
-        </article>
+      <section class="section section-transparency">
+        <div class="section-inner transparency-layout">
+          <div>
+            <p class="eyebrow dark">Transparansi penggunaan</p>
+            <h2>Alat bantu, bukan pengganti pemeriksaan pengguna.</h2>
+          </div>
+          <div class="transparency-copy">
+            <p>
+              Auto Entry Assistant adalah produk pihak ketiga dan bukan aplikasi resmi,
+              tidak berafiliasi, serta tidak disponsori oleh ATR/BPN atau instansi pemerintah.
+              Fitur tertentu saat ini mendukung portal kerja ATR/BPN.
+            </p>
+            <p>
+              Pengguna wajib memiliki akses sah, mengikuti aturan organisasi dan pemilik portal,
+              serta memeriksa hasil otomasi sebelum digunakan.
+            </p>
+            <a href="terms.html">Baca ketentuan penggunaan <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="kontak">
+        <div class="section-inner contact-layout">
+          <div>
+            <p class="eyebrow">Butuh bantuan?</p>
+            <h2>Bicarakan langsung dengan kami.</h2>
+            <p>Bantuan instalasi, akun, dan pembayaran tersedia melalui WhatsApp atau email.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="button button-whatsapp" href="https://wa.me/6289664430088?text=Halo%20Auto%20Entry%20Assistant%2C%20saya%20butuh%20bantuan." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.6a8 8 0 0 1-11.8 7L4 20l1.4-4.1A8 8 0 1 1 20 11.6Z"/><path d="M9 8.5c.3 2.5 2 4.3 4.5 5l1-1.2 2 .9c.2.1.3.4.2.6-.5 1.2-1.6 1.8-2.8 1.6-3.8-.7-6.7-3.6-7.4-7.4-.2-1.2.4-2.3 1.6-2.8.2-.1.5 0 .6.2l.9 2-1.2 1Z"/></svg>
+              +62 896-6443-0088
+            </a>
+            <a class="text-link-light" href="mailto:autoentryassistant@gmail.com">autoentryassistant@gmail.com</a>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="footer-inner">
+      <div class="section-inner footer-grid">
         <div>
-          <a class="brand footer-brand" href="index.html">
-            <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true">
-              <path d="M50 20L80 80H70L50 40L30 80H20L50 20Z" fill="#0d9488" />
-              <rect x="40" y="55" width="20" height="5" fill="#0d9488" />
-            </svg>
-            <span>Auto Entry Assistant</span>
-          </a>
-          <p>© 2026 Auto Entry Assistant. Precision automation for modern workflows.</p>
-          <p>Kontak: <a href="mailto:autoentryassistant@gmail.com">autoentryassistant@gmail.com</a></p>
+          <a class="brand footer-brand" href="index.html"><img src="favicon.svg" alt="" width="30" height="30" /><span>Auto Entry Assistant</span></a>
+          <p>Otomasi yang tetap berada di bawah kendali pengguna.</p>
         </div>
         <nav aria-label="Navigasi footer">
-          <a href="index.html">Produk</a>
+          <a href="#fitur">Fitur</a>
+          <a href="#harga">Harga</a>
           <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="terms.html">Terms</a>
-          <a href="mailto:autoentryassistant@gmail.com">Contact Us</a>
+          <a href="terms.html">Ketentuan</a>
         </nav>
+        <div class="footer-contact">
+          <a href="https://wa.me/6289664430088" target="_blank" rel="noopener">WhatsApp: +62 896-6443-0088</a>
+          <a href="mailto:autoentryassistant@gmail.com">autoentryassistant@gmail.com</a>
+          <span>© 2026 Auto Entry Assistant</span>
+        </div>
       </div>
     </footer>
   </body>
