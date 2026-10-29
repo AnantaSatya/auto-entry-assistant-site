@@ -100,7 +100,7 @@ h3 { font-size: 20px; }
 .carousel-slide { margin: 0; animation: preview-in 260ms ease; }
 .carousel-slide[hidden] { display: none; }
 .slide-preview-button { position: relative; display: block; width: 100%; padding: 0; overflow: hidden; border: 0; background: #dbe5e1; cursor: zoom-in; }
-.slide-preview-button img { width: 100%; height: auto; aspect-ratio: 16 / 8.7; object-fit: cover; transition: transform 260ms ease; }
+.slide-preview-button img { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: contain; transition: transform 260ms ease; }
 .slide-preview-button:hover img { transform: scale(1.012); }
 .preview-zoom { position: absolute; right: 18px; bottom: 18px; display: inline-flex; min-height: 38px; align-items: center; gap: 10px; padding: 0 15px; border: 1px solid rgba(255,255,255,0.4); border-radius: 999px; background: rgba(18,54,51,0.88); color: var(--white); font-size: 12px; font-weight: 800; letter-spacing: 0.03em; backdrop-filter: blur(8px); }
 .preview-zoom b { font-size: 20px; line-height: 1; }
