@@ -1,40 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#123633" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#123633">
     <title>Auto Entry Assistant - Otomasi Pekerjaan Berulang</title>
     <meta
       name="description"
       content="Auto Entry Assistant adalah ekstensi browser untuk membantu pekerjaan input data berulang pada portal kerja yang didukung."
-    />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg?v=20261019" />
-    <link rel="preload" href="hero-product.webp" as="image" type="image/webp" />
-    <link rel="stylesheet" href="styles.css?v=20261019-2" />
+    >
+    <link rel="icon" type="image/svg+xml" href="favicon.svg?v=20261019">
+    <link rel="preload" href="hero-product.webp" as="image" type="image/webp">
+    <link rel="stylesheet" href="styles.css?v=20261029-2">
   </head>
   <body>
     <header class="site-header">
       <div class="header-inner">
         <a class="brand" href="index.html" aria-label="Auto Entry Assistant, beranda">
-          <img src="favicon.svg" alt="" width="32" height="32" />
+          <img src="favicon.svg" alt="" width="32" height="32">
           <span>Auto Entry Assistant</span>
         </a>
         <nav class="desktop-nav" aria-label="Navigasi utama">
           <a href="#fitur">Fitur</a>
-          <a href="#cara-kerja">Cara kerja</a>
+          <a href="#preview">Preview</a>
+          <a href="#unduh">Unduh</a>
           <a href="#harga">Harga</a>
           <a href="privacy-policy.html">Privasi</a>
-          <a href="terms.html">Ketentuan</a>
         </nav>
         <a
           class="button button-small button-install"
-          href="https://chromewebstore.google.com/detail/hfgamchafmifeeedlchlpnbcmllpcbfe?utm_source=item-share-cb"
-          target="_blank"
-          rel="noopener"
+          href="#unduh"
         >
-          Pasang ekstensi
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg>
+          Pilih platform
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14" /></svg>
         </a>
       </div>
     </header>
@@ -44,7 +42,7 @@
         <div class="hero-image" role="img" aria-label="Tampilan Auto Entry Assistant di side panel browser"></div>
         <div class="hero-shade"></div>
         <div class="hero-inner">
-          <p class="eyebrow">Ekstensi browser · Versi 8.0.0</p>
+          <p class="eyebrow">AEA Web · Versi 8.2.0</p>
           <h1 id="hero-title">Auto Entry Assistant</h1>
           <p class="hero-lead">
             Selesaikan pekerjaan input data berulang langsung dari side panel browser,
@@ -53,12 +51,10 @@
           <div class="hero-actions">
             <a
               class="button button-light"
-              href="https://chromewebstore.google.com/detail/hfgamchafmifeeedlchlpnbcmllpcbfe?utm_source=item-share-cb"
-              target="_blank"
-              rel="noopener"
+              href="#unduh"
             >
-              Pasang dari Chrome Web Store
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg>
+              Pilih versi aplikasi
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14" /></svg>
             </a>
             <a class="button button-ghost" href="#cara-kerja">Lihat cara kerja</a>
           </div>
@@ -106,6 +102,88 @@
         </div>
       </section>
 
+      <section class="section section-preview" id="preview" aria-labelledby="preview-title">
+        <div class="section-inner">
+          <div class="preview-heading">
+            <div>
+              <p class="eyebrow dark">Lihat sebelum memasang</p>
+              <h2 id="preview-title">Satu panel untuk seluruh alur kerja.</h2>
+            </div>
+            <p>
+              Dari login dan pemilihan menu hingga pemantauan progres, semua kontrol penting
+              tetap terlihat di samping halaman kerja Anda.
+            </p>
+          </div>
+          <div class="preview-carousel" data-carousel role="group" aria-roledescription="carousel" aria-label="Preview Auto Entry Assistant">
+            <div class="carousel-stage">
+              <button class="carousel-arrow carousel-arrow-prev" type="button" data-carousel-prev aria-label="Preview sebelumnya">
+                <span aria-hidden="true">&#8592;</span>
+              </button>
+              <div class="carousel-viewport" aria-live="polite">
+                <figure class="carousel-slide is-active" data-carousel-slide data-title="Login &amp; akses akun" data-description="Autentikasi, trial, dan validasi masa aktif dalam satu tampilan.">
+                  <button class="slide-preview-button" type="button" data-preview-open aria-label="Perbesar preview Login dan akses akun">
+                    <img src="assets/previews/01-login-dan-akses-akun.png" alt="Halaman login dan validasi akses akun Auto Entry Assistant" width="1280" height="800">
+                    <span class="preview-zoom" aria-hidden="true">Perbesar <b>+</b></span>
+                  </button>
+                  <figcaption><span>01</span><div><strong>Login &amp; akses akun</strong><small>Autentikasi, trial, dan validasi masa aktif.</small></div></figcaption>
+                </figure>
+                <figure class="carousel-slide" data-carousel-slide data-title="Workspace terpadu" data-description="Menu aplikasi disesuaikan dengan hak akses setiap pengguna." hidden>
+                  <button class="slide-preview-button" type="button" data-preview-open aria-label="Perbesar preview Workspace terpadu">
+                    <img src="assets/previews/02-menu-workspace-terpadu.png" alt="Daftar menu workspace Auto Entry Assistant" width="1280" height="800" loading="lazy">
+                    <span class="preview-zoom" aria-hidden="true">Perbesar <b>+</b></span>
+                  </button>
+                  <figcaption><span>02</span><div><strong>Workspace terpadu</strong><small>Menu disesuaikan dengan akses pengguna.</small></div></figcaption>
+                </figure>
+                <figure class="carousel-slide" data-carousel-slide data-title="Otomasi batch" data-description="Siapkan banyak baris data dan jalankan dalam satu proses." hidden>
+                  <button class="slide-preview-button" type="button" data-preview-open aria-label="Perbesar preview Otomasi batch">
+                    <img src="assets/previews/03-otomasi-batch.png" alt="Pengaturan otomasi batch pada Auto Entry Assistant" width="1280" height="800" loading="lazy">
+                    <span class="preview-zoom" aria-hidden="true">Perbesar <b>+</b></span>
+                  </button>
+                  <figcaption><span>03</span><div><strong>Otomasi batch</strong><small>Siapkan banyak baris dalam satu proses.</small></div></figcaption>
+                </figure>
+                <figure class="carousel-slide" data-carousel-slide data-title="Progres &amp; result" data-description="Pantau status proses secara langsung lalu periksa hasil pekerjaan." hidden>
+                  <button class="slide-preview-button" type="button" data-preview-open aria-label="Perbesar preview Progres dan result">
+                    <img src="assets/previews/04-progres-dan-result.png" alt="Progres dan hasil pekerjaan Auto Entry Assistant" width="1280" height="800" loading="lazy">
+                    <span class="preview-zoom" aria-hidden="true">Perbesar <b>+</b></span>
+                  </button>
+                  <figcaption><span>04</span><div><strong>Progres &amp; result</strong><small>Pantau status dan periksa hasil pekerjaan.</small></div></figcaption>
+                </figure>
+                <figure class="carousel-slide" data-carousel-slide data-title="Dukungan langsung" data-description="Hubungi dukungan WhatsApp tanpa meninggalkan aplikasi." hidden>
+                  <button class="slide-preview-button" type="button" data-preview-open aria-label="Perbesar preview Dukungan langsung">
+                    <img src="assets/previews/05-dukungan-whatsapp.png" alt="Tombol dukungan WhatsApp Auto Entry Assistant" width="1280" height="800" loading="lazy">
+                    <span class="preview-zoom" aria-hidden="true">Perbesar <b>+</b></span>
+                  </button>
+                  <figcaption><span>05</span><div><strong>Dukungan langsung</strong><small>Bantuan tersedia dari dalam aplikasi.</small></div></figcaption>
+                </figure>
+              </div>
+              <button class="carousel-arrow carousel-arrow-next" type="button" data-carousel-next aria-label="Preview berikutnya">
+                <span aria-hidden="true">&#8594;</span>
+              </button>
+            </div>
+            <div class="carousel-footer">
+              <div class="carousel-dots" role="tablist" aria-label="Pilih preview">
+                <button class="carousel-dot is-active" type="button" data-carousel-dot="0" aria-label="Tampilkan preview 1" aria-selected="true"></button>
+                <button class="carousel-dot" type="button" data-carousel-dot="1" aria-label="Tampilkan preview 2" aria-selected="false"></button>
+                <button class="carousel-dot" type="button" data-carousel-dot="2" aria-label="Tampilkan preview 3" aria-selected="false"></button>
+                <button class="carousel-dot" type="button" data-carousel-dot="3" aria-label="Tampilkan preview 4" aria-selected="false"></button>
+                <button class="carousel-dot" type="button" data-carousel-dot="4" aria-label="Tampilkan preview 5" aria-selected="false"></button>
+              </div>
+              <span class="carousel-counter" data-carousel-counter>1 / 5</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <dialog class="preview-dialog" id="preview-dialog" aria-labelledby="preview-dialog-title">
+        <button class="preview-dialog-close" type="button" data-preview-close aria-label="Tutup preview">&#215;</button>
+        <img data-preview-image src="assets/previews/01-login-dan-akses-akun.png" alt="">
+        <div class="preview-dialog-copy">
+          <p class="eyebrow dark">Preview produk</p>
+          <h3 id="preview-dialog-title" data-preview-title>Login &amp; akses akun</h3>
+          <p data-preview-description>Autentikasi, trial, dan validasi masa aktif dalam satu tampilan.</p>
+        </div>
+      </dialog>
+
       <section class="section section-steps" id="cara-kerja">
         <div class="section-inner">
           <div class="section-heading-row">
@@ -120,6 +198,59 @@
             <li><span>2</span><h3>Siapkan</h3><p>Pilih menu workflow, masukkan data, dan tentukan rentang proses.</p></li>
             <li><span>3</span><h3>Jalankan</h3><p>Pantau progres lalu periksa kembali hasil sebelum digunakan untuk pekerjaan resmi.</p></li>
           </ol>
+        </div>
+      </section>
+
+      <section class="section section-downloads" id="unduh" aria-labelledby="download-title">
+        <div class="section-inner">
+          <div class="download-heading">
+            <p class="eyebrow dark">Download center</p>
+            <h2 id="download-title">Pilih aplikasi sesuai lingkungan kerja.</h2>
+            <p>Gunakan akun Auto Entry Assistant yang sama pada produk yang tersedia.</p>
+          </div>
+
+          <div class="download-showcase">
+            <div class="download-showcase-heading">
+              <span>01</span>
+              <div><h3>Auto Entry Assistant WEB</h3><p>Ekstensi browser untuk portal kerja yang didukung.</p></div>
+            </div>
+            <div class="platform-card-grid platform-card-grid-web">
+              <a class="platform-card platform-card-chrome" href="https://chromewebstore.google.com/detail/hfgamchafmifeeedlchlpnbcmllpcbfe?utm_source=item-share-cb" target="_blank" rel="noopener">
+                <span class="platform-logo"><img src="assets/platforms/google-chrome.svg" alt="" width="38" height="38"></span>
+                <span class="platform-card-copy"><small>AEA WEB</small><strong>Google Chrome</strong><em>Tersedia</em></span>
+                <span class="platform-card-arrow" aria-hidden="true">&#8599;</span>
+              </a>
+              <a class="platform-card platform-card-edge" href="https://chromewebstore.google.com/detail/hfgamchafmifeeedlchlpnbcmllpcbfe?utm_source=item-share-cb" target="_blank" rel="noopener">
+                <span class="platform-logo"><img src="assets/platforms/microsoft-edge.svg" alt="" width="38" height="38"></span>
+                <span class="platform-card-copy"><small>AEA WEB</small><strong>Microsoft Edge</strong><em>Tersedia</em></span>
+                <span class="platform-card-arrow" aria-hidden="true">&#8599;</span>
+              </a>
+              <a class="platform-card platform-card-firefox" href="https://addons.mozilla.org/en-US/firefox/addon/auto-entry-assistant/" target="_blank" rel="noopener">
+                <span class="platform-logo"><img src="assets/platforms/firefox.svg" alt="" width="38" height="38"></span>
+                <span class="platform-card-copy"><small>AEA WEB</small><strong>Mozilla Firefox</strong><em>Dalam review</em></span>
+                <span class="platform-card-arrow" aria-hidden="true">&#8599;</span>
+              </a>
+            </div>
+
+            <div class="platform-product-grid" id="download-products">
+              <div class="platform-product-block">
+                <div class="platform-product-heading"><span>02</span><div><h3>AEA CAD</h3><p>Plugin pendamping untuk AutoCAD.</p></div></div>
+                <a class="platform-card platform-card-cad" href="https://drive.google.com/drive/folders/1KmCF6lai2qkot3Wqm7iWx6h1y_H9HWhx?usp=sharing" target="_blank" rel="noopener">
+                  <span class="platform-logo platform-logo-product"><img src="favicon.svg" alt="" width="38" height="38"></span>
+                  <span class="platform-card-copy"><small>DESKTOP PLUGIN</small><strong>Auto Entry Assistant CAD</strong><em>Rilis 2.1.3</em></span>
+                  <span class="platform-card-arrow" aria-hidden="true">&#8599;</span>
+                </a>
+              </div>
+              <div class="platform-product-block is-disabled">
+                <div class="platform-product-heading"><span>03</span><div><h3>AEA GIS</h3><p>Perangkat bantu untuk ArcMap.</p></div></div>
+                <div class="platform-card platform-card-gis" aria-disabled="true">
+                  <span class="platform-logo platform-logo-product"><img src="favicon.svg" alt="" width="38" height="38"></span>
+                  <span class="platform-card-copy"><small>ARCMAP</small><strong>Auto Entry Assistant GIS</strong><em>Coming Soon</em></span>
+                  <span class="platform-card-lock" aria-hidden="true">&#8212;</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -139,9 +270,7 @@
             </ul>
             <a
               class="button button-coral"
-              href="https://chromewebstore.google.com/detail/hfgamchafmifeeedlchlpnbcmllpcbfe?utm_source=item-share-cb"
-              target="_blank"
-              rel="noopener"
+              href="#unduh"
             >Mulai uji coba</a>
             <p>Layanan dijual dan dikelola oleh Auto Entry Assistant, bukan oleh Google.</p>
           </div>
@@ -190,11 +319,13 @@
     <footer class="site-footer">
       <div class="section-inner footer-grid">
         <div>
-          <a class="brand footer-brand" href="index.html"><img src="favicon.svg" alt="" width="30" height="30" /><span>Auto Entry Assistant</span></a>
+          <a class="brand footer-brand" href="index.html"><img src="favicon.svg" alt="" width="30" height="30"><span>Auto Entry Assistant</span></a>
           <p>Otomasi yang tetap berada di bawah kendali pengguna.</p>
         </div>
         <nav aria-label="Navigasi footer">
           <a href="#fitur">Fitur</a>
+          <a href="#preview">Preview</a>
+          <a href="#unduh">Unduh</a>
           <a href="#harga">Harga</a>
           <a href="privacy-policy.html">Privacy Policy</a>
           <a href="terms.html">Ketentuan</a>
@@ -206,5 +337,6 @@
         </div>
       </div>
     </footer>
+    <script src="site.js?v=20261029-1"></script>
   </body>
 </html>
